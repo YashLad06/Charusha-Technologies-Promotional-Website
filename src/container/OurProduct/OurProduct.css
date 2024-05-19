@@ -1,0 +1,23 @@
+.product__header {
+    background: url('../../assets/why-orangeMantra-bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+.app__wrapper_info {
+    color: antiquewhite;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}

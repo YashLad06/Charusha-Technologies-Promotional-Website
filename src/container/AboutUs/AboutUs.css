@@ -1,0 +1,59 @@
+.app__gradient {
+    background-color: var(--color-dark-blue) !important;
+    background: linear-gradient(0deg, var(--color-medium-blue) 10%,
+            rgba(37, 49, 93, 1) 30%,
+            var(--color-dark-blue) 100%);
+}
+
+#about {
+    z-index: 2;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.app__chef-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+    margin-right: 1rem;
+}
+
+.app__chef-content_quote {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.app__chef-content_quote img {
+    width: 45px;
+    height: 40px;
+    margin: 0 1rem 1rem 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__padding {
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app__padding {
+        padding: 4rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .app__padding {
+        padding: 4rem 2rem;
+    }
+}

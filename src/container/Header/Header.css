@@ -1,0 +1,65 @@
+.app__header {
+    background-image: url('../../assets/landing-page-background-1.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+
+    animation: change 16s infinite ease-in-out alternate;
+}
+
+@keyframes change{
+    0%, 100%{
+        background-image: url('../../assets/landing-page-background-1.webp');
+    }
+    50%{
+        background-image: url('../../assets/landing-page-background-2.jpg');
+    }
+}
+
+
+.app__header-h1 {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 70px;
+}
+
+@media screen and (min-width: 2000px) {}
+
+.wrapper_info {
+    color: var(--color-white);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.wrapper_info-desc{
+    padding: 4rem 0;
+    width: 60%;
+    text-transform: none;
+    /* outline: 1px dashed #fff; */
+}
+
+@media screen and (max-width: 768px){
+    .app__header-h1{
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .app__header-h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .app__header-h1{
+        font-size: 45px;
+    }
+}

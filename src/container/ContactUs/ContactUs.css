@@ -1,0 +1,233 @@
+.contact__header {
+    background: rgb(0, 49, 149);
+    background: linear-gradient(180deg, rgba(12, 12, 12, 1) 0%, rgba(0, 47, 149, 1) 75%);
+    border: none;
+    outline: none;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.contact__header-head {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__header-info {
+    flex: 1;
+    width: 100%;
+    margin-left: 4rem;
+}
+
+.contact__wrapper-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* min-height: 100vh; */
+}
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 45vw;
+    /* min-height: 100vh; */
+}
+
+.contact-wrapper-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+    /* outline: 1px solid red; */
+}
+
+.contact__padding {
+    padding: 2rem;
+}
+
+.contact__p {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.contact__button {
+    background: transparent;
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 20px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    border: 2px solid var(--color-white);
+    outline: none;
+    cursor: pointer;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.overlay__close {
+    margin-right: 1.5rem;
+}
+
+.contact__button .phone {
+    font-family: var(--font-alt);
+    font-weight: 500;
+}
+
+.contact__button .email {
+    font-family: var(--font-base);
+}
+
+iframe {
+    border: 0px;
+    width: 100%;
+}
+
+.contact__form-elements {
+    /* outline: 1px solid red; */
+    width: 100%;
+    margin: 0 1rem;
+
+    align-items: center;
+}
+
+.contact__form-elements form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 1rem;
+    width: 45vw;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+textarea {
+    background-color: var(--color-crimson);
+    resize: none;
+}
+
+@media screen and (min-width: 2000px) {
+    .contact__button {
+        font-size: 37px;
+        line-height: 67px;
+    }
+
+    .contact__p {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .contact__wrapper {
+        align-items: center;
+        min-height: 90vh;
+        min-width: 100vw;
+    }
+
+    .contact__wrapper-head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        min-width: 95vw;
+    }
+
+    .contact__p {
+        color: var(--color-white);
+    }
+
+    .contact__form-elements form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contact__wrapper {
+        align-items: center;
+        min-height: max-content;
+        min-width: 100vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact__p {
+        font-size: 14px;
+        color: var(--color-white);
+    }
+
+    .contact__wrapper {
+        align-items: center;
+        min-height: 70vh;
+        min-width: 100vw;
+    }
+
+    .contact__form-elements form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact__p {
+        font-size: 12px;
+    }
+
+    .contact__wrapper {
+        align-items: center;
+        min-height: 70vh;
+        min-width: 100vw;
+    }
+
+    form input,
+    form textarea {
+        width: 90vw;
+    }
+}
