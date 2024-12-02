@@ -57,27 +57,33 @@ const ContactUs = () => {
                     <div className='contact-wrapper-info contact__padding'>
 
                         <button type="button" className='contact__button'>
-                            <a href="tel:+917083153850"
+                            <a href="tel:+919767647421"
                                 target="_blank"
                                 className="contact-links phone"
                             >
                                 <MdOutlinePhone fontSize={30} className="overlay__close" />
-                                +91 70831 53850
+                                +91 97676 47421
                             </a>
                         </button>
 
                         <button type="button" className='contact__button'>
-                            <a href="mailto:charushatech@gmail.com"
+                            <a href="mailto:yash.lad05@outlook.com"
                                 target="_blank"
                                 className="contact-links email"
                             >
                                 <MdEmail fontSize={30} className="overlay__close" />
-                                charushatech@gmail.com
+                                yash.lad05@outlook.com
                             </a>
                         </button>
 
-                        <iframe
+                        {/* <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.324218026268!2d73.9856013749924!3d17.68213768325613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2399c730937f1%3A0xb271ce06a38d92e2!2sTuljabhavani%20Complex!5e0!3m2!1sen!2sin!4v1715074843162!5m2!1sen!2sin"
+                            height="300"
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"> */}
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.9592620242154!2d77.72928760701802!3d12.99268460000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1119ef2ace25%3A0x6488e842dda59980!2sTower%2021%2C%20Prestige%20Shantiniketan!5e0!3m2!1sen!2sin!4v1733143997812!5m2!1sen!2sin"
                             height="300"
                             allowFullScreen=""
                             loading="lazy"
